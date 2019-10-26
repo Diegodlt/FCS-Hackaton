@@ -18,6 +18,10 @@ export class HomeScreen extends Component{
                     title="First"
                     onPress={() => navigate('First')}
                 />
+                <Button
+                    title="AR Test"
+                    onPress={()=>navigate('ARtest')}
+                />
             </View>
         );
        

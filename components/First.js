@@ -7,14 +7,15 @@ import {
 } from 'react-native';
 
 export class First extends Component{
-
+ 
     render(){
+        const { goBack} = this.props.navigation;
         return(
             <View style={styles.screen}>
                 <Text>This is a test</Text>
                 <Button
                     title="This is Test"
-                    onPress={() => navigate('First')}
+                    onPress={() => goBack()}
                 />
             </View>
         );
